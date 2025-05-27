@@ -1,8 +1,4 @@
-Here’s a customized README.md file for your Educational Website project, including the names of your group members and tailored content for an academic platform:
-
-⸻
-
-🎓 Educational Website – Final Semester Project
+🎓 Educational Website – second Semester Project
 
 Welcome to our final semester Educational Website project. This platform is developed to help students access courses, register for classes, and manage their educational journey with ease and efficiency.
 
