@@ -23,4 +23,166 @@
     <a href="courses.html" class="btn btn-success mt-3">Browse Courses</a>
   </div>
 </body>
-</html>                                                                                                                                       
+</html>                                                                                                                                      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  background-color: #f4f9ff;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #007bff;
+}
+/* General background for full-page sections */
+body {
+  background-image: url('apple1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: for better readability on top of the background */
+.container, form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Center content vertically */
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-page {
+  background-image: url('apple1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.register-page {
+  background-image: url('apple1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.courses-page {
+  background-image: url('apple1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.index-page {
+  background-image: url('apple1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+</style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Available Courses</h2>
+    <div class="row">
+      
+      <!-- Course 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Learn HTML, CSS, JavaScript, and modern frameworks.</p>
+            <p><strong>Price: ₹2999</strong></p>
+            <button class="btn btn-primary enroll-btn" data-course="Web Development">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Python Programming</h5>
+            <p class="card-text">Master Python from basics to advanced projects.</p>
+            <p><strong>Price: ₹2499</strong></p>
+            <button class="btn btn-primary enroll-btn" data-course="Python Programming">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Data Science</h5>
+            <p class="card-text">Learn data analysis, machine learning, and AI tools.</p>
+            <p><strong>Price: ₹3999</strong></p>
+            <button class="btn btn-primary enroll-btn" data-course="Data Science">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Cybersecurity</h5>
+            <p class="card-text">Understand ethical hacking and system protection.</p>
+            <p><strong>Price: ₹3499</strong></p>
+            <button class="btn btn-primary enroll-btn" data-course="Cybersecurity">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">Master tools like Photoshop, Illustrator, and UI design.</p>
+            <p><strong>Price: ₹1999</strong></p>
+            <button class="btn btn-primary enroll-btn" data-course="Graphic Design">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Handle enroll button clicks
+    const buttons = document.querySelectorAll('.enroll-btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        const course = this.getAttribute('data-course');
+        const user = JSON.parse(localStorage.getItem("user"));
+        const email = user?.email || "your registered email";
+
+        alert(Thank you for enrolling in "${course}"! 📧 We will mail you at ${email} about your enrollment process.);
+      });
+    });
+  </script>
+</body>
+</html>                                                                                                                         
