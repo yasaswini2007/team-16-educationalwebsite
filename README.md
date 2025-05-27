@@ -1,6 +1,6 @@
 🎓 Educational Website – second Semester Project
 
-Welcome to our final semester Educational Website project. This platform is developed to help students access courses, register for classes, and manage their educational journey with ease and efficiency.
+Welcome to our second semester Educational Website project. This platform is developed to help students access courses, register for classes, and manage their educational journey with ease and efficiency.
 
 👥 Team Members
 	•	Kotha Yasaswini – Designed the Course Listing Page
